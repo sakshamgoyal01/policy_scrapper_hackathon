@@ -7,7 +7,7 @@ COPY requirements.txt .
 
 RUN pip install --upgrade pip \
     && pip install --no-cache-dir -r requirements.txt
-RUN chmod +x app/start.sh
+
 COPY . .
 
 # Stage 2: Run
